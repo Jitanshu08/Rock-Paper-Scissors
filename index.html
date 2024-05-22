@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="heading">
+        <li>ROCK</li>
+        <li>PAPER</li>
+        <li>SCISSORS</li>
+      </ul>
+      <div class="score-board">
+        <div class="score-box">
+          <div class="score-title">COMPUTER SCORE</div>
+          <div class="score" id="computer-score">0</div>
+        </div>
+        <div class="score-box">
+          <div class="score-title">YOUR SCORE</div>
+          <div class="score" id="human-score">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="choices">
+      <button class="choice" id="rock">Rock</button>
+      <button class="choice" id="paper">Paper</button>
+      <button class="choice" id="scissors">Scissors</button>
+    </div>
+    <div class="result" id="result"></div>
+    <button class="rules-btn" id="rules-btn">Rules</button>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h2>Rules</h2>
+        <p>Rock beats Scissors, Scissors beat Paper, and Paper beats Rock.</p>
+        <button class="close-btn" id="close-btn">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

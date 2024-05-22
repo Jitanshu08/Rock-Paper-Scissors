@@ -1,0 +1,136 @@
+body {
+  font-family: Roboto;
+  background: rgba(140, 196, 97, 1);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  border: solid;
+  border-width: 3px;
+  border-color: white;
+  border-radius: 15px;
+}
+
+.heading {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.heading li {
+  font-size: 40px;
+
+  color: white;
+  font-weight: 600;
+}
+
+.score-board {
+  display: flex;
+  flex-direction: row; /* Aligns score boxes side by side */
+  justify-content: flex-end; /* Aligns the scores to the right */
+  gap: 20px; /* Adds space between the score boxes */
+}
+
+.score-box {
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  width: 139px;
+  height: 128px;
+}
+
+.score-title {
+  font-weight: 700;
+  margin: 0 20px 5px 20px;
+  font-size: 17px;
+  color: rgba(101, 101, 101, 1);
+}
+
+.score {
+  font-size: 68px;
+}
+
+.choices {
+  margin-top: 20px;
+}
+
+.choice {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.choice:hover {
+  background-color: #ddd;
+}
+
+.result {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.rules-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.celebration {
+  animation: celebration-animation 1s ease-in-out infinite;
+}
+
+@keyframes celebration-animation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
